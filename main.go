@@ -1,7 +1,7 @@
-package practice
+package main
 
 import (
-	// instance "practice/base/01_base"
+	//instance "practice/base/01_base"
 	// instance "practice/base/02_type"
 	// instance "practice/base/03_const_operation"
 	// instance "practice/base/04_ptr_control"
@@ -28,6 +28,6 @@ import (
 	instance "practice/custom/05_gin"
 )
 
-func init() {
+func main() {
 	instance.Test()
 }
