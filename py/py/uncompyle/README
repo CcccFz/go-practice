@@ -1,0 +1,37 @@
+Installation
+------------
+Installation from the source distribution:
+
+     python setup.py install
+
+   To install to a user's home-dir:
+     python setup.py install --home=<dir>
+
+   To install to another prefix (eg. /usr/local)
+     python setup.py install --prefix=/usr/local
+
+  If you need to force the python interpreter to eg. pyton2:
+     python2 setup.py install
+
+Usage
+-----
+
+uncompyle2 -h		prints short usage
+uncompyle2 --help	prints long usage
+
+
+Known Bugs/Restrictions
+-----------------------
+安装：  
+cd uncompyle\uncompyle2-1.1  
+python setup.py install  
+
+
+使用：  
+双击uncompyle.bat使用    
+
+
+参数和选项:  
+src 字节码所在目录  
+--py 要编译成的代码类型  
+-o 输出路径  

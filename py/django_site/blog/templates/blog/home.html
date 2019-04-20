@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}欢迎光临首页{% endblock %}
+ 
+{% block content %}
+    {% for x in lst %}
+        {{ x }}{% if not forloop.last %},{% endif %}
+    {% endfor %}
+    <ul>
+        {% for athlete in athlete_list %}
+            <li>{{ athlete.name }}</li>
+        {% empty %}
+            <p>抱歉，列表为空</p>
+        {% endfor %}
+    </ul>
+
+    {% if request.user.is_authenticated %}
+        {{ request.user.username }}，您好！
+    {% else %}
+        请<a href="/admin/login/">登录</a>
+    {% endif %}
+
+    {{ request.url }}
+
+{% endblock %}

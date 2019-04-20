@@ -1,0 +1,4 @@
+*.pyc
+output/build
+output/dist
+src/.idea
