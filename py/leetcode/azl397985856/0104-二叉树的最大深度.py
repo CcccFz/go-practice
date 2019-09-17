@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
+# https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
 # https://github.com/azl397985856/leetcode/blob/master/problems/104.maximum-depth-of-binary-tree.md
 
 # Definition for a binary tree node.

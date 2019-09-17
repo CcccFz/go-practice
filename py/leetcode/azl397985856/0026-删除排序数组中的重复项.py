@@ -1,5 +1,6 @@
-# https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+# https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 # https://github.com/azl397985856/leetcode/blob/master/problems/26.remove-duplicates-from-sorted-array.md
+
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:

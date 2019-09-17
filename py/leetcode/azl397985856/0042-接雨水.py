@@ -1,5 +1,6 @@
-# https://leetcode.com/problems/trapping-rain-water/description/
+# https://leetcode-cn.com/problems/trapping-rain-water/
 # https://github.com/azl397985856/leetcode/blob/master/problems/42.trapping-rain-water.md
+
 
 class Solution:
     def trap(self, height: List[int]) -> int:

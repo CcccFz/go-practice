@@ -1,5 +1,5 @@
+# https://leetcode-cn.com/problems/merge-sorted-array/
 # https://github.com/azl397985856/leetcode/blob/master/problems/88.merge-sorted-array.md
-# https://leetcode.com/problems/merge-sorted-array/description/
 
 
 class Solution:

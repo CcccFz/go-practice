@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
+# https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
 # https://github.com/azl397985856/leetcode/blob/master/problems/122.best-time-to-buy-and-sell-stock-ii.md
 
 
