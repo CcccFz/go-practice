@@ -1,4 +1,4 @@
-package _1_base
+package main
 
 import (
 	"fmt"
@@ -26,7 +26,7 @@ var (
 //}
 
 // 首字母大写，为public
-func Test() {
+func main() {
 	fmt.Println("HHH")
 	fmt.Println(time.Now())
 	println(num)
