@@ -1,23 +1,4 @@
-package _6_linkedlist
-
-// O(N)
-func (l *LinkedList) Reverse() {
-	if l == nil || l.head == nil || l.head.next == nil {
-		return
-	}
-
-	var pre *Node = nil
-
-	cur := l.head.next
-	for cur != nil {
-		tmp := cur.next
-		cur.next = pre
-		pre = cur
-		cur = tmp
-	}
-
-	l.head.next = pre
-}
+package _6_linked_list
 
 // 升序
 func Merge(l1, l2 *LinkedList) *LinkedList {
@@ -52,6 +33,25 @@ func Merge(l1, l2 *LinkedList) *LinkedList {
 	}
 
 	return l
+}
+
+// O(N)
+func (l *LinkedList) Reverse() {
+	if l == nil || l.head == nil || l.head.next == nil {
+		return
+	}
+
+	var pre *Node = nil
+
+	cur := l.head.next
+	for cur != nil {
+		tmp := cur.next
+		cur.next = pre
+		pre = cur
+		cur = tmp
+	}
+
+	l.head.next = pre
 }
 
 func (l *LinkedList) DeleteBottomN(n uint) {

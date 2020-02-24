@@ -1,4 +1,4 @@
-package _6_linkedlist
+package _6_linked_list
 
 import (
 	"testing"
@@ -6,16 +6,16 @@ import (
 	"github.com/stretchr/testify/suite"
 )
 
-type SingleLinkedListAlgoTestSuite struct {
+type LinkedListAlgoTestSuite struct {
 	suite.Suite
 	l *LinkedList
 }
 
-func TestGenTestSuite(t *testing.T) {
-	suite.Run(t, new(SingleLinkedListAlgoTestSuite))
+func TestLinkedListAlgoTestSuite(t *testing.T) {
+	suite.Run(t, new(LinkedListAlgoTestSuite))
 }
 
-func (s *SingleLinkedListAlgoTestSuite) SetupTest() {
+func (s *LinkedListAlgoTestSuite) SetupTest() {
 	s.l = NewLinkedList()
 
 	for i := 0; i < 5; i++ {
@@ -23,13 +23,13 @@ func (s *SingleLinkedListAlgoTestSuite) SetupTest() {
 	}
 }
 
-func (s *SingleLinkedListAlgoTestSuite) TestReverse() {
+func (s *LinkedListAlgoTestSuite) TestReverse() {
 	s.l.Reverse()
 	s.Equal(uint(5), s.l.Len())
 	s.Equal("5, 4, 3, 2, 1", s.l.String())
 }
 
-func (s *SingleLinkedListAlgoTestSuite) TestMerge() {
+func (s *LinkedListAlgoTestSuite) TestMerge() {
 	l1, l2 := NewLinkedList(), NewLinkedList()
 
 	for i := 1; i <= 5; i++ {
@@ -43,7 +43,7 @@ func (s *SingleLinkedListAlgoTestSuite) TestMerge() {
 	s.Equal("1, 2, 3, 4, 5, 6, 7, 8, 9, 10", Merge(l1, l2).String())
 }
 
-func (s *SingleLinkedListAlgoTestSuite) TestDeleteBottomN() {
+func (s *LinkedListAlgoTestSuite) TestDeleteBottomN() {
 	s.l.DeleteBottomN(0)
 	s.Equal("1, 2, 3, 4, 5", s.l.String())
 
@@ -63,7 +63,7 @@ func (s *SingleLinkedListAlgoTestSuite) TestDeleteBottomN() {
 	s.Equal("4", s.l.String())
 }
 
-func (s *SingleLinkedListAlgoTestSuite) TestHasCircle() {
+func (s *LinkedListAlgoTestSuite) TestHasCircle() {
 	s.Equal(false, s.l.HasCircle())
 
 	cur := s.l.head
@@ -75,6 +75,6 @@ func (s *SingleLinkedListAlgoTestSuite) TestHasCircle() {
 	s.Equal(true, s.l.HasCircle())
 }
 
-func (s *SingleLinkedListAlgoTestSuite) TestFindMiddleNode() {
+func (s *LinkedListAlgoTestSuite) TestFindMiddleNode() {
 	s.Equal(3, s.l.FindMiddleNode().val)
 }
