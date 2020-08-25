@@ -38,7 +38,7 @@ func main() {
 	for i := 0; i < 10000; i++ {
 		wg.Add(1)
 		go func() {
-			o.run(count)
+			o.run(printf)
 			wg.Done()
 		}()
 	}
@@ -47,6 +47,6 @@ func main() {
 	fmt.Printf("耗时: %d\n", time.Now().UnixNano()-t)
 }
 
-func count() {
+func printf() {
 	fmt.Println(1)
 }
